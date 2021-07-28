@@ -1,0 +1,131 @@
+/* * Warna */
+:root {
+    --dark-blue: #045DE9;
+    --light-blue: #09C6F9;
+    --dark-gray: #BEBEBE;
+    --light-gray: #E0E0E0;
+    --black: #202020;
+    --white: #FFFFFF;
+}
+
+/* * Typography */
+:root {
+    --pk: 'La Belle Aurore', cursive;
+    --title: 'Space Mono', monospace;
+    --body: 'Manrope', sans-serif;
+}
+
+/* * Default Styles */
+/* ! DESKTOP VIEW */
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: var(--black) !important;
+}
+
+body,
+button {
+    font-family: var(--body) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 4px solid var(--black);
+    background-color: var(--dark-blue);
+}
+
+::selection {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--dark-blue);
+}
+
+.pk {
+    font-family: var(--pk) !important;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--title) !important;
+    color: var(--white);
+}
+
+b {
+    font-size: xx-large;
+}
+
+button {
+    margin-bottom: 2.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0.1px var(--dark-blue);
+}
+
+button:active {
+    transform: translateY(10px);
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+th,
+td {
+    padding: 0.75rem 2rem;
+}
+
+th {
+    text-align: center;
+    color: var(--white) !important;
+    background: var(--dark-blue);
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--dark-gray);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--light-gray);
+}

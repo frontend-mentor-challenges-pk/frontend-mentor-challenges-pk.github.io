@@ -12,8 +12,8 @@
 
 /* * Typography */
 :root {
-    --body: 'Lexend Deca', sans-serif;
     --title: 'Big Shoulders Display', cursive;
+    --body: 'Lexend Deca', sans-serif;
 }
 
 /* * Default Styles */
