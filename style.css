@@ -4,7 +4,7 @@
     --light-blue: #09C6F9;
     --dark-gray: #BEBEBE;
     --light-gray: #E0E0E0;
-    --black: #202020;
+    --black: #000000;
     --white: #FFFFFF;
 }
 
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background-color: var(--black) !important;
+    background-image: linear-gradient(135deg, var(--dark-blue), var(--light-blue)) !important;
 }
 
 body,
@@ -54,6 +54,21 @@ a {
     color: var(--dark-blue);
 }
 
+a:hover {
+    color: var(--white);
+    font-weight: bold;
+}
+
+img {
+    max-width: 25% !important;
+    border-radius: 50%;
+}
+
+hr {
+    width: 85%;
+    border: solid 2px #ffffff75;
+}
+
 .pk {
     font-family: var(--pk) !important;
 }
@@ -61,49 +76,71 @@ a {
 h1 {
     text-align: center;
     font-family: var(--title) !important;
-    color: var(--white);
+    color: var(--black);
 }
 
-b {
-    font-size: xx-large;
+div,
+button {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+div {
+    width: 50%;
+    margin: 2.5rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    background-color: #ffffff50;
+    border-radius: 15px;
+    border: 2px solid #ffffff75;
 }
 
 button {
-    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
     padding: 0.75rem 2rem;
     border-radius: 50px;
     border: none;
     outline: none;
     font-weight: bold;
     letter-spacing: 0.5px;
-    background-color: var(--dark-blue);
-    color: var(--white);
+    background-color: var(--light-blue);
 }
 
 button:hover {
-    box-shadow: 0 0 10px 0.1px var(--dark-blue);
+    box-shadow: 0 0 15px 0.1px var(--light-blue);
 }
 
 button:active {
     transform: translateY(10px);
 }
 
-table {
+table,
+.scrollToTop {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2.5rem;
+    margin: 0 0.5rem 2.5rem 0.5rem;
+}
+
+table {
+    margin: 2.5rem;
 }
 
 th,
 td {
-    padding: 0.75rem 2rem;
+    padding: 0.75rem 5rem 0.75rem 0.75rem;
 }
 
 th {
     text-align: center;
     color: var(--white) !important;
     background: var(--dark-blue);
+}
+
+.number {
+    padding: 0.75rem;
+    text-align: center;
 }
 
 tr:first-child th:first-child {
@@ -128,4 +165,31 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
     background-color: var(--light-gray);
+}
+
+.scrollToTop {
+    margin-bottom: 2rem !important;
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: small;
+    }
+
+    h1,
+    .pk {
+        font-size: large;
+    }
+
+    div {
+        width: 80%;
+        padding: 1.25rem 0.75rem 0 0.75rem;
+    }
+
+    th,
+    td {
+        padding: 0.75rem 0.5rem 0.75rem 0.75rem;
+    }
 }
