@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <!-- * HTML Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="owner" content="Probo Krishnacahya" />
+
+  <!-- * Title pada Browser Tab -->
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- * Favicon pada Browser Tab -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=2">
+
+  <!-- * Styling .css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- * CSS Library (Animate On Scroll) * -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> <!-- CDN Sources (.css) -->
+
+  <!-- * Embedded 3 External Fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <!-- Title -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> <!-- Button -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!-- Body -->
+
+  <!-- * CDN Icon Fonts (Bootstrap Icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 </head>
+
 <body>
 
-  Build The Community Your Fans Will Love
+  <a href="#"><img src="assets/images/logo.svg" class="logo" alt="Huddle's Logo" loading="lazy" data-aos="fade-up"/></a>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+  <br><br>
 
-  Register
+  <div class="container">
+    <img src="assets/images/illustration-mockups.svg" alt="Huddle's Logo" loading="lazy" data-aos="fade-up"/>
+    <div class="register" data-aos="fade-up">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.</p>
+      <button type="button">Register</button>
+    </div>
+  </div>
+  <div class="social-media" data-aos="fade-up">
+    <a href="https://www.facebook.com/huddle"><i class="bi bi-facebook"></i></a>&emsp;&emsp;
+    <a href="https://twitter.com/huddle"><i class="bi bi-twitter"></i></a>&emsp;&emsp;
+    <a href="https://instagram.com/huddle"><i class="bi bi-instagram"></i></a>
+  </div>
 
-  <footer>
+  <footer data-aos="fade-up">
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      <a
+        href="https://frontend-mentor-challenges-pk.github.io/huddle-landing-page-with-single-introductory-section-master/"><b>Huddle
+          landing page with a single introductory section</b></a> |
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><b>Frontend Mentor</b></a>.
+      Coded by <a href="https://github.com/cahyaa5758/"><b>Probo Krishnacahya</b></a>.
     </p>
   </footer>
+
+  <!-- * CSS Library (Animate On Scroll) * -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- CDN Sources (.js) -->
+  <script>
+    AOS.init(); //Initialize AOS
+  </script>
+
 </body>
+
 </html>

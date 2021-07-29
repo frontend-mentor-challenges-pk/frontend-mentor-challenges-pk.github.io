@@ -1,0 +1,142 @@
+/* * Warna */
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --dark-gray: hsl(0, 0%, 25%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --attribution: hsl(65, 100%, 50%);
+}
+
+/* * Typography */
+:root {
+    --title: 'Poppins', sans-serif;
+    --body: 'Open Sans', sans-serif;
+}
+
+/* * Default Styles */
+body {
+    background: var(--violet) url(../images/bg-desktop.svg) fixed center no-repeat !important;
+    background-size: cover !important;
+    font-family: var(--body) !important;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+button {
+    font-family: var(--title) !important;
+}
+
+h1,
+p {
+    color: var(--white) !important;
+}
+
+img {
+    -webkit-user-drag: none !important;
+}
+
+.logo {
+    max-width: 15%;
+    margin: 1% 0 0 1%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+}
+
+.container img {
+    max-width: 50%;
+}
+
+.register {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10% 7% 7%;
+}
+
+button {
+    width: fit-content;
+    margin-top: 5%;
+    padding: 0.75rem 2.5rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    box-shadow: 0 2.5px 5px 0.1px var(--dark-gray);
+    background-color: var(--white);
+    color: var(--violet);
+}
+
+button:active {
+    transform: translateY(10px);
+    background-color: var(--soft-magenta);
+    color: var(--white) !important;
+}
+
+.social-media {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 2.5% 5% 0 0;
+}
+
+i {
+    font-size: x-large;
+    color: var(--white);
+}
+
+i:hover {
+    color: var(--soft-magenta);
+}
+
+.attribution {
+    margin-top: 2%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--attribution) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: var(--violet) url(../images/bg-mobile.svg) fixed center no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .logo {
+        max-width: 40%;
+        margin: 5% 0 0 5%;
+    }
+
+    .container {
+        display: grid;
+        margin: 2.5%;
+        padding: 5%;
+    }
+
+    .container img {
+        max-width: 100%;
+    }
+
+    .register {
+        margin-top: 7.5%;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5% 0;
+    }
+
+}

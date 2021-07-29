@@ -37,9 +37,13 @@ h1 {
     font-family: var(--title) !important;
 }
 
-p,
-h1 {
+h1,
+p {
     color: var(--white) !important;
+}
+
+img {
+    -webkit-user-drag: none !important;
 }
 
 .container {
@@ -77,7 +81,7 @@ h1 {
 
 button {
     margin-top: 15%;
-    padding: 0.75rem 2rem;
+    padding: 5% 15%;
     border-radius: 50px;
     border: none;
     outline: none;
