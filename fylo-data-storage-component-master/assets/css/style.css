@@ -1,0 +1,134 @@
+/* * Warna */
+:root {
+    --gradient1: hsl(6, 100%, 80%);
+    --gradient2: hsl(335, 100%, 65%);
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --attribution: hsl(6, 100%, 80%);
+}
+
+/* * Typography */
+:root {
+    --body: 'Raleway', sans-serif;
+}
+
+/* * Default Styles */
+body {
+    background: var(--very-dark-blue) url(../images/bg-desktop.png) fixed bottom no-repeat !important;
+    color: var(--white) !important;
+    font-family: var(--body) !important;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    -webkit-user-drag: none !important;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem;
+}
+
+.left,
+.right {
+    margin: 0 1rem;
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+}
+
+.left {
+    width: 35%;
+    display: grid;
+    padding: 2rem;
+    border-top-right-radius: 50px;
+}
+
+.right {
+    width: 65%;
+    padding: 1rem;
+}
+
+.three {
+    width: 25.5%;
+    height: 3rem;
+    margin: 2rem 0.75rem 0 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--very-dark-blue);
+}
+
+.three:hover {
+    filter: brightness(150%);
+}
+
+.three:active {
+    transform: translateY(10px);
+}
+
+.remaining {
+    position: relative;
+    left: 16rem;
+    bottom: 3rem;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--grayish-blue);
+}
+
+.bigger {
+    font-size: xx-large;
+    color: var(--black);
+}
+
+.progress {
+    border-radius: 50px !important;
+    background-color: var(--very-dark-blue) !important;
+}
+
+.progress-bar {
+    background-image: linear-gradient(90deg, var(--gradient1), var(--gradient2));
+}
+
+.attribution {
+    margin-top: 2%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--attribution) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: var(--violet) url(../images/bg-mobile.svg) fixed center no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .logo {
+        max-width: 40%;
+        margin: 5% 0 0 5%;
+    }
+
+    .container {
+        display: grid;
+        margin: 2.5%;
+        padding: 5%;
+    }
+
+    .container img {
+        max-width: 100%;
+    }
+
+}
