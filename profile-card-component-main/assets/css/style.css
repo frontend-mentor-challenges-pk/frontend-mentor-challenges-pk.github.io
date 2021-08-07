@@ -92,4 +92,16 @@ span {
     color: var(--white) !important;
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .victor {
+        position: absolute;
+        top: 23%;
+        left: 38.25%;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
