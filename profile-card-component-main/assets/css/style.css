@@ -36,7 +36,7 @@ img {
 .container {
     display: grid;
     place-items: center;
-    margin: 5rem;
+    margin: 7rem;
     width: fit-content !important;
     border-radius: 15px;
     box-shadow: 0 0 10px 0.1px var(--dark-gray);
