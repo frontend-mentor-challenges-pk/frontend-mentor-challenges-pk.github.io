@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+
+  <!-- * HTML Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="owner" content="Probo Krishnacahya" />
+
+  <!-- * Title pada Browser Tab -->
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- * Favicon pada Browser Tab -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=2">
+
+  <!-- * Styling .css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- * Framework CSS (Bootstrap v5.0.2) -->
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    //JavaScript Bundle with Popper
+  </script>
+
+  <!-- * Embedded External Fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <div class="container text-center">
 
-  803K
-  Likes
+    <div class="atas"><img src="assets/images/bg-pattern-card.svg" class="pattern" /></div>
+    <br>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="col">
+      <img src="assets/images/image-victor.jpg" class="victor" />
+      <div class="col pt-5"><b>Victor Crest</b> &nbsp; <span>26</span></div>
+    </div>
+    <div class="col city pt-2 pb-4"><span>London</span></div>
+
+    <div class="row data mb-3">
+      <hr><br>
+
+      <div class="profile">
+        <div class="col-md-4"><b>80K</b></div>
+        <div class="col-md-4"><b>803K</b></div>
+        <div class="col-md-4"><b>1.4K</b></div>
+      </div>
+      
+      <div class="profile">
+        <div class="col-md-4"><span class="stats">Followers</span></div>
+        <div class="col-md-4"><span class="stats">Likes</span></div>
+        <div class="col-md-4"><span class="stats">Photos</span></div>
+      </div>
+    </div>
+
   </div>
+
+  <div class="attribution">
+    <a href="https://frontend-mentor-challenges-pk.github.io/profile-card-component-main/"><b>Profile card
+        component</b></a> | Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank"><b>Frontend Mentor</b></a>. Coded by <a href="https://github.com/cahyaa5758/"><b>Probo
+        Krishnacahya</b></a>.
+  </div>
+
 </body>
+
 </html>
