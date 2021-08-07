@@ -43,6 +43,7 @@ img {
 .right {
     margin: 0 1rem;
     border-radius: 10px;
+    box-shadow: 0 0 20px 0.1px var(--very-dark-blue);
     background-color: var(--dark-blue);
 }
 
@@ -81,6 +82,7 @@ img {
     bottom: 3rem;
     width: fit-content;
     padding: 0.5rem 2rem;
+    font-size: small;
     border-radius: 10px;
     background-color: var(--white);
     color: var(--grayish-blue);
@@ -100,6 +102,11 @@ img {
     background-image: linear-gradient(90deg, var(--gradient1), var(--gradient2));
 }
 
+.size {
+    position: relative;
+    margin-left: 17.75rem !important;
+}
+
 .attribution {
     margin-top: 2%;
     font-size: 11px;
@@ -112,23 +119,42 @@ img {
 
 @media only screen and (max-width: 768px) {
     body {
-        background: var(--violet) url(../images/bg-mobile.svg) fixed center no-repeat !important;
+        background: var(--very-dark-blue) url(../images/bg-mobile.png) fixed center no-repeat !important;
         background-size: cover !important;
     }
 
-    .logo {
-        max-width: 40%;
-        margin: 5% 0 0 5%;
-    }
-
-    .container {
+    .box {
         display: grid;
-        margin: 2.5%;
-        padding: 5%;
+        place-items: center;
     }
 
-    .container img {
-        max-width: 100%;
+    .left,
+    .right {
+        margin: 2rem;
     }
 
+    .left {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .right {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .three {
+        width: 18.5%;
+        height: 3.5rem;
+        margin: 2rem 1rem 0 0;
+    }
+
+    .remaining {
+        left: 11.5rem;
+    }
+
+    .size {
+        position: relative;
+        margin-left: 15rem !important;
+    }
 }
