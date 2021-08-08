@@ -33,7 +33,7 @@ h1 {
 }
 
 section {
-    margin: 2.5rem 0 5rem 0;
+    margin: 3.5rem 0 0 0;
 }
 
 .atas {
@@ -45,7 +45,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 30%;
+    margin-right: 10rem;
 }
 
 .heading h1 {
@@ -64,11 +64,11 @@ section {
 .rate {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
     background-color: var(--light-grayish-magenta);
     color: var(--very-dark-magenta);
-    border-radius: 0.5rem;
-    padding: 15px 30px;
-    margin-bottom: 10px;
 }
 
 .rate-1 {
@@ -93,14 +93,24 @@ section {
 }
 
 .card {
+    margin-bottom: 6.25rem;
+    padding: 1.25rem 1.5rem 0.25rem 1.5rem;
     border-radius: 10px !important;
-    padding: 1.5rem 2.5rem;
     background-color: var(--very-dark-magenta) !important;
     color: var(--white);
 }
 
+.card1,
 .card2 {
-    margin-top: 5rem;
+    margin-right: 1.25rem !important;
+}
+
+.card2 {
+    top: 1rem;
+}
+
+.card3 {
+    top: 2rem;
 }
 
 .profile-picture {
@@ -129,31 +139,13 @@ section {
 }
 
 @media (max-width: 768px) {
-    body {
-        background-image: url(../images/bg-pattern-top-mobile.svg),
-            url(../images/bg-pattern-bottom-mobile.svg);
+    section {
+        margin-top: 2rem;
     }
 
-    .atas .heading {
-        margin-bottom: 20px;
-        margin-right: 0;
+    .heading {
+        margin: 0 0 2rem 0;
         text-align: center;
-    }
-
-    .rate {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .stars {
-        margin-right: 0px;
-        margin-bottom: 10px;
-    }
-
-    .rate-1,
-    .rate-2,
-    .rate-3 {
-        align-self: stretch;
     }
 
     .atas,
@@ -163,7 +155,31 @@ section {
         justify-content: center;
     }
 
-    .bawah .card {
-        margin-right: 0px;
+    .rate {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stars {
+        margin: 0 0 1rem 0.25rem;
+    }
+
+    .rate-1,
+    .rate-2,
+    .rate-3 {
+        align-self: stretch;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card1,
+    .card2 {
+        margin-right: 0 !important;
+    }
+
+    .attribution {
+        margin-top: 4rem;
     }
 }
